@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "43CA972E-8398-4D60-874E-2C7E406455DB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8188FA6C-2013-4D4A-89DF-A6BFA4975947"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "window-shopper/View/PJCurrencyTextField.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "awakeFromNib()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8188FA6C-2013-4D4A-89DF-A6BFA4975947 - 18e3836778eee7bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "window_shopper.PJCurrencyTextField.awakeFromNib() -&gt; ()"
+                  moduleName = "window-shopper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/praveenjangre/workspace/ios/praveenjangre/window-shopper/window-shopper/window-shopper/View/PJCurrencyTextField.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "338">
+               </Location>
+               <Location
+                  uuid = "8188FA6C-2013-4D4A-89DF-A6BFA4975947 - 18e3836778eee7bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "window_shopper.PJCurrencyTextField.awakeFromNib() -&gt; ()"
+                  moduleName = "window-shopper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/praveenjangre/workspace/ios/praveenjangre/window-shopper/window-shopper/window-shopper/View/PJCurrencyTextField.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "397">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

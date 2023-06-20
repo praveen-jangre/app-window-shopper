@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PJMainVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
