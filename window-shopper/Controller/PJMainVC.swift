@@ -9,11 +9,11 @@ import UIKit
 
 class PJMainVC: UIViewController {
     
-    
     @IBOutlet weak var wageTextField: PJCurrencyTextField!
     @IBOutlet weak var priceTextField: PJCurrencyTextField!
-    
-    
+    @IBOutlet weak var resultLbl: UILabel!
+    @IBOutlet weak var hourLbl: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -26,13 +26,33 @@ class PJMainVC: UIViewController {
         wageTextField.inputAccessoryView = calcBtn
         priceTextField.inputAccessoryView = calcBtn
         
+        resultLbl.isHidden = true
+        hourLbl.isHidden  = true
     }
     
-    @objc func calculate(){
-        debugPrint("calculate the pay")
-        
+    @objc func calculate() {
+        if let wageText = wageTextField.text, let priceText = priceTextField.text {
+            if let wage = Double(wageText), let price = Double(priceText) {
+                view.endEditing(true)
+                resultLbl.isHidden = false
+                hourLbl.isHidden = false
+                resultLbl.text = "\(Wage.getHours(forWage: wage, andPrice: price))"
+            }
+        }
     }
-
+    
+    
+    
+    @IBAction func clearCalculator(_ sender: Any) {
+        resetInputViews()
+    }
+    
+    func resetInputViews() {
+        resultLbl.isHidden = true
+        hourLbl.isHidden = true
+        wageTextField.text = ""
+        priceTextField.text = ""
+    }
 
 }
 
