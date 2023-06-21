@@ -31,8 +31,17 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Xe0-dn-bbs"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ngR-Sl-te0" customClass="PJCurrencyTextField" customModule="window_shopper" customModuleProvider="target">
+                                <rect key="frame" x="20" y="349" width="353" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Lp2-4P-6t2"/>
+                                    <constraint firstAttribute="height" constant="35" id="Yke-8L-1l4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -43,18 +52,33 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f6i-jX-le3" secondAttribute="trailing" constant="20" id="Hki-Vi-kCp"/>
                             <constraint firstItem="f6i-jX-le3" firstAttribute="top" secondItem="Lca-S9-VWX" secondAttribute="bottom" constant="80" id="OpT-dA-Ay8"/>
                             <constraint firstAttribute="bottom" secondItem="IxP-ww-MQb" secondAttribute="bottom" id="QFh-BH-cTI"/>
+                            <constraint firstItem="ngR-Sl-te0" firstAttribute="top" secondItem="f6i-jX-le3" secondAttribute="bottom" constant="40" id="XS6-i2-z39"/>
                             <constraint firstItem="f6i-jX-le3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eun-hw-U7h"/>
                             <constraint firstItem="Lca-S9-VWX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="f4J-gD-YJS"/>
+                            <constraint firstItem="ngR-Sl-te0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ffU-cA-pb3"/>
                             <constraint firstItem="IxP-ww-MQb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gIu-ve-g7A"/>
                             <constraint firstItem="Lca-S9-VWX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jC4-Np-XMq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ngR-Sl-te0" secondAttribute="trailing" constant="20" id="sDl-pR-jkx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="priceTextField" destination="ngR-Sl-te0" id="U7q-Qa-Q75"/>
+                        <outlet property="wageTextField" destination="f6i-jX-le3" id="XHb-6u-qKV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="112.21374045801527" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="f6i-jX-le3">
+            <size key="intrinsicContentSize" width="200" height="37.333333333333336"/>
+        </designable>
+        <designable name="ngR-Sl-te0">
+            <size key="intrinsicContentSize" width="117.33333333333333" height="37.333333333333336"/>
+        </designable>
+    </designables>
     <resources>
         <image name="windowShopperBG" width="414" height="736"/>
         <image name="windowShopperIcon" width="115" height="115"/>

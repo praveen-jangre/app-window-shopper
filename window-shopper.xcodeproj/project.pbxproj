@@ -17,6 +17,9 @@
 		9516E8012A41E36D0090E6FA /* window_shopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9516E8002A41E36D0090E6FA /* window_shopperUITests.swift */; };
 		9516E8032A41E36D0090E6FA /* window_shopperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9516E8022A41E36D0090E6FA /* window_shopperUITestsLaunchTests.swift */; };
 		955B702A2A41E8A200D1ACFE /* PJCurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955B70292A41E8A200D1ACFE /* PJCurrencyTextField.swift */; };
+		955B702D2A430F9700D1ACFE /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955B702C2A430F9700D1ACFE /* Wage.swift */; };
+		955B702E2A430F9700D1ACFE /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955B702C2A430F9700D1ACFE /* Wage.swift */; };
+		955B702F2A430F9700D1ACFE /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955B702C2A430F9700D1ACFE /* Wage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,7 @@
 		9516E8002A41E36D0090E6FA /* window_shopperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = window_shopperUITests.swift; sourceTree = "<group>"; };
 		9516E8022A41E36D0090E6FA /* window_shopperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = window_shopperUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		955B70292A41E8A200D1ACFE /* PJCurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJCurrencyTextField.swift; sourceTree = "<group>"; };
+		955B702C2A430F9700D1ACFE /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		9516E7DE2A41E36B0090E6FA /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				955B702B2A430F6B00D1ACFE /* Model */,
 				955B70282A41E85400D1ACFE /* View */,
 				9516E80F2A41E5A40090E6FA /* Controller */,
 				9516E7DF2A41E36B0090E6FA /* AppDelegate.swift */,
@@ -144,6 +149,14 @@
 				955B70292A41E8A200D1ACFE /* PJCurrencyTextField.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		955B702B2A430F6B00D1ACFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				955B702C2A430F9700D1ACFE /* Wage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +292,7 @@
 			files = (
 				9516E7E42A41E36B0090E6FA /* PJMainVC.swift in Sources */,
 				9516E7E02A41E36B0090E6FA /* AppDelegate.swift in Sources */,
+				955B702D2A430F9700D1ACFE /* Wage.swift in Sources */,
 				955B702A2A41E8A200D1ACFE /* PJCurrencyTextField.swift in Sources */,
 				9516E7E22A41E36B0090E6FA /* SceneDelegate.swift in Sources */,
 			);
@@ -289,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9516E7F72A41E36D0090E6FA /* window_shopperTests.swift in Sources */,
+				955B702E2A430F9700D1ACFE /* Wage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9516E8032A41E36D0090E6FA /* window_shopperUITestsLaunchTests.swift in Sources */,
+				955B702F2A430F9700D1ACFE /* Wage.swift in Sources */,
 				9516E8012A41E36D0090E6FA /* window_shopperUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

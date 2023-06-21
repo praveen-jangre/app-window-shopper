@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+@IBDesignable
 class PJCurrencyTextField: UITextField {
 
     /*
@@ -17,8 +19,16 @@ class PJCurrencyTextField: UITextField {
     }
     */
     
+    override func prepareForInterfaceBuilder() {
+        customizeView()
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        customizeView()
+    }
+    
+    func customizeView() {
         backgroundColor = UIColor(white: 1.0, alpha: 0.5)
         layer.cornerRadius = 5.0
         textAlignment = .center
@@ -29,8 +39,6 @@ class PJCurrencyTextField: UITextField {
             textColor = .white
             
         }
-        
-        
         
     }
 
